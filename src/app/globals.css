@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;  
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode variables */
+    --background: 241 5% 100%;
+    --foreground: 241 0% 29%;
+    --card: 241 5% 100%;
+    --card-foreground: 241 0% 29%;
+    --popover: 241 5% 100%;
+    --popover-foreground: 241 0% 29%;
+    --primary: 274 40% 55%;
+    --primary-foreground: 0 0% 14%;
+    --secondary: 241 5% 95%;
+    --secondary-foreground: 241 0% 29%;
+    --muted: 241 5% 97%;
+    --muted-foreground: 241 1% 64%;
+    --accent: 241 5% 93%;
+    --accent-foreground: 241 0% 29%;
+    --destructive: 52 13% 62%;
+    --destructive-foreground: 0 0% 14%;
+    --border: 241 5% 89%;
+    --input: 241 5% 89%;
+    --ring: 274 20% 55%;
+    --radius: 0.5rem;
+    
+    /* Additional shadcn variables */
+    --border: 241 5% 89%;
+    --input: 241 5% 89%;
+    --ring: 274 20% 55%;
+    --radius: 0.5rem;
+
+    /* Custom design system colors */
+    --success: 140 15% 60%;
+    --warning: 60 15% 70%;
+    --surface-color: 250 2% 98%;
+    --text-primary-color: 0 0% 10%;
+    --text-secondary-color: 250 2% 45%;
+  }
+
+  .dark {
+    /* Dark mode variables */
+
+    
+    /* Override shadcn dark mode if needed */
+    --border: 250 2% 27%;
+    --input: 250 2% 27%;
+    --ring: 250 10% 50%;
+    
+    /* Custom dark mode colors */
+    --success: 140 15% 65%;
+    --warning: 60 15% 75%;
+    --surface-color: 250 2% 27%;
+    --text-primary-color: 0 0% 99%;
+    --text-secondary-color: 0 0% 71%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Auto dark mode based on system preference */
+
+      
+      --border: 0.27 0.02 250;
+      --input: 250 2% 27%;
+      --ring: 250 10% 50%;
+      --success: 140 15% 65%;
+      --warning: 60 15% 75%;
+      --surface-color: 250 2% 27%;
+      --text-primary-color: 0 0% 99%;
+      --text-secondary-color: 0 0% 71%;
+    }
+  }
+
+  /* Typography styles using design system fonts */
+  .font-heading {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Design system spacing utilities */
+  .ds-1 { width: 12px; height: 12px; }
+  .ds-2 { width: 24px; height: 24px; }
+  .ds-3 { width: 36px; height: 36px; }
+  .ds-4 { width: 48px; height: 48px; }
+  .ds-5 { width: 60px; height: 60px; }
+  .ds-6 { width: 72px; height: 72px; }
+  
+  .p-ds-1 { padding: 12px; }
+  .p-ds-2 { padding: 24px; }
+  .p-ds-3 { padding: 36px; }
+  .p-ds-4 { padding: 48px; }
+  .p-ds-5 { padding: 60px; }
+  .p-ds-6 { padding: 72px; }
+  
+  .m-ds-1 { margin: 12px; }
+  .m-ds-2 { margin: 24px; }
+  .m-ds-3 { margin: 36px; }
+  .m-ds-4 { margin: 48px; }
+  .m-ds-5 { margin: 60px; }
+  .m-ds-6 { margin: 72px; }
+
+  /* Animation and shadow styles from design system */
+  .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+  .shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); }
+  .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); }
+  .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
+}
